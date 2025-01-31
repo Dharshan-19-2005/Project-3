@@ -19,7 +19,7 @@ const Quiz = () => {
       setLoading(true);
       setError(null);
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5001/api/questions', {
+      const response = await axios.get('https://project-3-3-jdf4.onrender.com/api/questions', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

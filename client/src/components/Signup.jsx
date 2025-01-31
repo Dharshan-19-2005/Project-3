@@ -30,7 +30,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/api/auth/signup', {
+      const response = await axios.post('https://project-3-3-jdf4.onrender.com/api/auth/signup', {
         username: formData.username,
         email: formData.email,
         password: formData.password

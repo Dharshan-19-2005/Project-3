@@ -13,7 +13,7 @@ const Leaderboard = () => {
   const fetchScores = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5001/api/scores', {
+      const response = await axios.get('https://project-3-3-jdf4.onrender.com/api/scores', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
